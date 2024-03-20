@@ -3,26 +3,26 @@ package main
 import (
 	"bufio"
 	"darkdownlsp/rpc"
-	"fmt"
 	"log"
 	"os"
 )
 
 func main() {
-	fmt.Println("Hi mom")
+  logger := getLogger("/Users/dhruvdabhi/Developer/projects/darkdownlsp/log.txt")
+  logger.Println("Hello Mom, I am starting")
 
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Split(rpc.Split)
 
 	for scanner.Scan() {
 		msg := scanner.Text()
-		handleMessage(msg)
+		handleMessage(logger, msg)
 	}
 
 }
 
-func handleMessage(_ any) {
-
+func handleMessage(logger *log.Logger, msg any) {
+  logger.Println(msg)
 }
 
 func getLogger(filename string) *log.Logger {
