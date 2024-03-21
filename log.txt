@@ -1,1 +1,5 @@
-[darkdownlsp]2024/03/20 22:01:49 main.go:12: Hello Mom, I am starting
+[darkdownlsp]2024/03/21 12:54:01 main.go:14: Hello Mom, I am starting
+[darkdownlsp]2024/03/21 12:54:01 main.go:31: Received msg with the method: initialize
+[darkdownlsp]2024/03/21 12:54:01 main.go:40: Conntected to: Neovim 0.9.5
+[darkdownlsp]2024/03/21 12:54:01 main.go:48: Send the reply
+[darkdownlsp]2024/03/21 12:54:01 main.go:31: Received msg with the method: initialized
