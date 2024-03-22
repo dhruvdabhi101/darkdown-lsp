@@ -45,7 +45,7 @@ func handleMessage(logger *log.Logger, method string, contents []byte) {
 		writer := os.Stdout
 		writer.Write([]byte(reply))
 
-    logger.Print("Send the reply")
+		logger.Print("Send the reply")
 
 	}
 }

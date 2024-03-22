@@ -1,6 +1,6 @@
 local client = vim.lsp.start_client {
   name = "darkdownlsp",
-  cmd = { "path to the binary of lsp" }
+  cmd = { "darkdownlsp" }
 }
 
 if not client then
@@ -9,15 +9,9 @@ if not client then
 end
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "*",
+  pattern = "markdown",
   callback = function()
     vim.lsp.buf_attach_client(0, client)
-  end,
-})
-
-vim.api.nvim_create_autocmd("LspAttach", {
-  callback = function(args)
-    print("Attach", vim.inspect(args))
   end,
 })
 

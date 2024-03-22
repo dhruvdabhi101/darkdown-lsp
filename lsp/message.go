@@ -17,36 +17,3 @@ type Notification struct {
 	Method string `json:"method"`
 }
 
-type InitializeResponse struct {
-	Response
-	Result InitializeResult `json:"result"`
-}
-type InitializeResult struct {
-	capabilities ServerCapabilities `json:"capabilities"`
-	ServerInfo   ServerInfo         `json:"serverInfo"`
-}
-
-type ServerCapabilities struct {
-}
-
-type ServerInfo struct {
-	Name    string `json:"name"`
-	Version string `json:"version"`
-}
-
-func NewInitializeReponse(id int) InitializeResponse {
-	return InitializeResponse{
-		Response: Response{
-			RPC: "2.0",
-			ID:  &id,
-		},
-		Result: InitializeResult{
-			capabilities: ServerCapabilities{},
-			ServerInfo: ServerInfo{
-				Name:    "darkdownlsp",
-				Version: "0.0.1",
-			},
-		},
-	}
-
-}
