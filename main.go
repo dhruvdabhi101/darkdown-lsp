@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"darkdownlsp/analysis"
 	"darkdownlsp/lsp"
 	"darkdownlsp/rpc"
 	"encoding/json"
@@ -16,18 +17,20 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Split(rpc.Split)
 
+	state := analysis.NewState()
+
 	for scanner.Scan() {
 		msg := scanner.Bytes()
 		method, contents, err := rpc.DecodeMessage(msg)
 		if err != nil {
 			logger.Printf("Error decoding message: %s", err)
 		}
-		handleMessage(logger, method, contents)
+		handleMessage(logger, state, method, contents)
 	}
 
 }
 
-func handleMessage(logger *log.Logger, method string, contents []byte) {
+func handleMessage(logger *log.Logger, state analysis.State, method string, contents []byte) {
 	logger.Printf("Received msg with the method: %s", method)
 
 	switch method {
@@ -46,6 +49,14 @@ func handleMessage(logger *log.Logger, method string, contents []byte) {
 		writer.Write([]byte(reply))
 
 		logger.Print("Send the reply")
+
+	case "textDocument/didOpen":
+		var request lsp.DidOpenTextDocumentNotification
+		if err := json.Unmarshal(contents, &request); err != nil {
+			logger.Printf("Error unmarshalling initialize request: %s", err)
+		}
+		logger.Printf("Opened %s, %s", request.Params.TextDocument.URI, request.Params.TextDocument.Text)
+		state.OpenDocument(request.Params.TextDocument.URI, request.Params.TextDocument.Text)
 
 	}
 }
