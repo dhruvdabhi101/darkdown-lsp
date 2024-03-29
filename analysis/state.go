@@ -1,5 +1,7 @@
 package analysis
 
+import "strings"
+
 type State struct {
 	Documents map[string]string
 }
@@ -13,4 +15,10 @@ func (s *State) OpenDocument(document, content string) {
 }
 func (s *State) UpdateDocument(uri, content string) {
 	s.Documents[uri] = content
+}
+func (s *State) GetLine(uri string, line int) string {
+  document := s.Documents[uri]
+  // return the line from the document
+  documentLines := strings.Split(document, "\n")
+  return documentLines[line]
 }
