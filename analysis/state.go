@@ -9,5 +9,8 @@ func NewState() State {
 }
 
 func (s *State) OpenDocument(document, content string) {
-  s.Documents[document] = content
+	s.Documents[document] = content
+}
+func (s *State) UpdateDocument(uri, content string) {
+	s.Documents[uri] = content
 }

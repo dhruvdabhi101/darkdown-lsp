@@ -10,3 +10,4 @@ To run this LSP:
 - put [load_test_lsp.lua](./load_test_lsp.lua) file in the `./config/nvim/after/plugin/` folder
 - change to command path to the path of the binary created in previous step
 - restart neovim and open any markdown file
+
