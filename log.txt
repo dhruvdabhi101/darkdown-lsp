@@ -1,51 +1,6 @@
-[darkdownlsp]2024/03/30 01:52:43 main.go:17: Hello Mom, I am starting
-[darkdownlsp]2024/03/30 01:52:43 main.go:37: Received msg with the method: initialize
-[darkdownlsp]2024/03/30 01:52:43 main.go:46: Conntected to: Neovim 0.9.5
-[darkdownlsp]2024/03/30 01:52:43 main.go:51: Send the reply
-[darkdownlsp]2024/03/30 01:52:43 main.go:37: Received msg with the method: initialized
-[darkdownlsp]2024/03/30 01:52:44 main.go:37: Received msg with the method: textDocument/didOpen
-[darkdownlsp]2024/03/30 01:52:44 main.go:59: Opened file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:44 main.go:37: Received msg with the method: textDocument/hover
-[darkdownlsp]2024/03/30 01:52:44 main.go:84: Hover request for 0
-[darkdownlsp]2024/03/30 01:52:46 main.go:37: Received msg with the method: textDocument/hover
-[darkdownlsp]2024/03/30 01:52:46 main.go:84: Hover request for 6
-[darkdownlsp]2024/03/30 01:52:48 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:48 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:48 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:48 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:48 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:48 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:48 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:48 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:48 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:48 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:49 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:49 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:49 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:49 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:49 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:49 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:49 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:49 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:49 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:49 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:50 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:50 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:50 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:50 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:50 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:50 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:50 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:50 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:50 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:50 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:50 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:50 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:51 main.go:37: Received msg with the method: textDocument/didSave
-[darkdownlsp]2024/03/30 01:52:51 main.go:37: Received msg with the method: textDocument/hover
-[darkdownlsp]2024/03/30 01:52:51 main.go:84: Hover request for 6
-[darkdownlsp]2024/03/30 01:52:53 main.go:37: Received msg with the method: textDocument/didChange
-[darkdownlsp]2024/03/30 01:52:53 main.go:69: Changed file:///Users/dhruvdabhi/Developer/projects/darkdownlsp/README.md
-[darkdownlsp]2024/03/30 01:52:54 main.go:37: Received msg with the method: textDocument/didSave
-[darkdownlsp]2024/03/30 01:52:54 main.go:37: Received msg with the method: textDocument/didSave
-[darkdownlsp]2024/03/30 01:52:54 main.go:37: Received msg with the method: shutdown
+[darkdownlsp]2024/04/01 13:37:28 main.go:17: Hello Mom, I am starting
+[darkdownlsp]2024/04/01 13:37:28 main.go:37: Received msg with the method: initialize
+[darkdownlsp]2024/04/01 13:37:28 main.go:46: Conntected to: Neovim 0.9.5
+[darkdownlsp]2024/04/01 13:37:28 main.go:51: Send the reply
+[darkdownlsp]2024/04/01 13:37:28 main.go:37: Received msg with the method: initialized
+[darkdownlsp]2024/04/01 13:37:37 main.go:37: Received msg with the method: shutdown

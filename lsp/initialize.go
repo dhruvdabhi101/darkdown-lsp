@@ -25,6 +25,7 @@ type InitializeResult struct {
 type ServerCapabilities struct {
 	TextDocumentSync int  `json:"textDocumentSync"`
 	HoverProvider    bool `json:"hoverProvider"`
+  ColorProvider    bool `json:"colorProvider"`
 }
 
 type ServerInfo struct {
@@ -42,6 +43,7 @@ func NewInitializeReponse(id int) InitializeResponse {
 			Capabilities: ServerCapabilities{
 				TextDocumentSync: 1,
 				HoverProvider:    true,
+        ColorProvider:   true,
 			},
 			ServerInfo: ServerInfo{
 				Name:    "darkdownlsp",

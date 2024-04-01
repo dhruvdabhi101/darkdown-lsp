@@ -100,7 +100,15 @@ func handleMessage(logger *log.Logger, writer io.Writer, state analysis.State, m
 		}
 		// write it back
 		writeResponse(writer, response)
+
+
+
 	}
+
+
+
+
+
 }
 
 func getLogger(filename string) *log.Logger {
@@ -118,16 +126,16 @@ func writeResponse(writer io.Writer, msg any) {
 }
 
 func getHoverMessage(text string) string {
-	if strings.HasPrefix(text, "###") {
-		return "Heading 2"
-	} else if strings.HasPrefix(text, "##") {
-		return "Heading 2"
-	} else if strings.HasPrefix(text, "#") {
+	if strings.HasPrefix(text, "@") {
 		return "Heading 1"
-	} else if strings.HasPrefix(text, "-") {
+	} else if strings.HasPrefix(text, ">") {
 		return "List Item"
-	} else {
-		return "Hello World"
+	}  else if strings.HasPrefix(text, "\\") {
+    return "Code Block"
+  } else if strings.HasPrefix(text, "^") {
+    return "Italic Content"
+  } else {
+		return "No Info Available"
 	}
 
 }
